@@ -1,6 +1,7 @@
 package com.example.sample.kotlin.indepth.ui.home
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -26,6 +27,17 @@ class HomeFragment : Fragment() {
         homeViewModel.text.observe(this, Observer {
             textView.text = it
         })
+
+        val setOperatorTextView: TextView = root.findViewById(R.id.text_set_operator)
+        setOperatorTextView.setOnClickListener {
+            //https://juejin.im/post/5b1f7699f265da6e155d5965#heading-5
+
+            val list = arrayListOf('a', 'b', 'c', 'd', 'e', 'f', 'g')
+            list.map { it - 'c' }.filter { it > 0 }.forEach {
+                Log.d("HomeFragment", it.toString())
+            }
+        }
+
         return root
     }
 }
