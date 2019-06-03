@@ -6,5 +6,6 @@ data class UserInfo(
     var head: String?,
     var flag: Int?,
     var gender: Int?,
-    var mobile: String?
+    var mobile: String?,
+    var like: String? = "Mango"
 )
