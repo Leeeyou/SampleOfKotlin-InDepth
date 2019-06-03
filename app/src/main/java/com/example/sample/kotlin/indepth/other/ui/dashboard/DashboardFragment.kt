@@ -1,4 +1,4 @@
-package com.example.sample.kotlin.indepth.ui.dashboard
+package com.example.sample.kotlin.indepth.other.ui.dashboard
 
 import android.os.Bundle
 import android.view.LayoutInflater

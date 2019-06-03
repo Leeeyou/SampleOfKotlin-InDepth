@@ -1,4 +1,4 @@
-package com.example.sample.kotlin.indepth.ui.notifications
+package com.example.sample.kotlin.indepth.other.ui.notifications
 
 import android.os.Bundle
 import android.view.LayoutInflater

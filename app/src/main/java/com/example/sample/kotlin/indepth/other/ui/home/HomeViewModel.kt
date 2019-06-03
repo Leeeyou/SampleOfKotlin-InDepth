@@ -1,4 +1,4 @@
-package com.example.sample.kotlin.indepth.ui.home
+package com.example.sample.kotlin.indepth.other.ui.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
