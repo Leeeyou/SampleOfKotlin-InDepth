@@ -3,7 +3,7 @@ package com.example.sample.kotlin.indepth.advanced_features
 data class Point(val x: Int, val y: Int)
 
 operator fun Point.unaryMinus() = Point(-x, -y)
-operator fun Point.unaryPlus() = Point(+x, +y)
+operator fun Point.unaryPlus() = Point(x + 10, y + 101)
 
 val point = Point(10, 20)
 

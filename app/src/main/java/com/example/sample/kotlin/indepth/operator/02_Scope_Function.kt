@@ -20,7 +20,7 @@ fun main() {
     println("---")
 
     user.nickname = "Lily"
-    user.takeIf { it.nickname?.length!! > 0 }?.also { println("姓名为${it.nickname}") } ?: println("姓名为空")
+    user.takeIf { it.nickname?.length!! > 0 }?.also { println("姓名为${it.nickname}") } ?: errorCallback()
     user.takeUnless { it.nickname?.length!! > 0 }?.also { println("姓名为空") } ?: println("姓名为${user.nickname}")
     println("---")
 
@@ -30,4 +30,8 @@ fun main() {
     }
     println(user)
 
+}
+
+fun errorCallback() {
+    println("姓名为空")
 }

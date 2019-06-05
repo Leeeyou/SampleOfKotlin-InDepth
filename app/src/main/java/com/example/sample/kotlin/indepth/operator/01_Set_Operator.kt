@@ -20,6 +20,13 @@ fun main() {
     println(numbers.windowed(3))
     println("---")
 
+    val letters = ('a'..'f').toList()
+    val pairs = letters.zipWithNext()
+
+    println(letters) // [a, b, c, d, e, f]
+    println(pairs) // [(a, b), (b, c), (c, d), (d, e), (e, f)]
+    println("---")
+
     println(numbers.elementAtOrNull(10))
     println(numbers.elementAtOrElse(10) { index -> "The value for index $index is undefined" })
     println("---")
